@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>setTimeout小记 | 博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="window setTimeout() 方法定义 setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。  语法 12setTimeout(code, milliseconds, params1, params2, ...)setTimeout(function, milliseconds, params1, params2, ...)  返回值： 返回一个ID（数字），可以将这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="setTimeout小记">
+<meta property="og:url" content="http://yoursite.com/liumengjie2148.github.io/2018/07/04/setTimeout小记/index.html">
+<meta property="og:site_name" content="博客">
+<meta property="og:description" content="window setTimeout() 方法定义 setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。  语法 12setTimeout(code, milliseconds, params1, params2, ...)setTimeout(function, milliseconds, params1, params2, ...)  返回值： 返回一个ID（数字），可以将这">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-04T08:56:11.679Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="setTimeout小记">
+<meta name="twitter:description" content="window setTimeout() 方法定义 setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。  语法 12setTimeout(code, milliseconds, params1, params2, ...)setTimeout(function, milliseconds, params1, params2, ...)  返回值： 返回一个ID（数字），可以将这">
+  
+    <link rel="alternate" href="/liumengjie2148.github.io/atom.xml" title="博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/liumengjie2148.github.io/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/liumengjie2148.github.io/" id="logo">博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/liumengjie2148.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/liumengjie2148.github.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/liumengjie2148.github.io/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com/liumengjie2148.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-setTimeout小记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/liumengjie2148.github.io/2018/07/04/setTimeout小记/" class="article-date">
+  <time datetime="2018-07-04T07:08:25.000Z" itemprop="datePublished">2018-07-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      setTimeout小记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="window-setTimeout-方法"><a href="#window-setTimeout-方法" class="headerlink" title="window setTimeout() 方法"></a>window setTimeout() 方法</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3> <p>setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。</p>
+
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(code, milliseconds, params1, params2, ...)</span><br><span class="line">setTimeout(function, milliseconds, params1, params2, ...)</span><br></pre></td></tr></table></figure>
+ <p>返回值： 返回一个ID（数字），可以将这个ID传递给clearTimeout()来取消执行setTimeout()方法。</p>
+
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><ul>
+<li><p>实例1： 用setTimeout() 方法实现 setInternal()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function()&#123;</span><br><span class="line">  console.log(&apos;hello&apos;);</span><br><span class="line">  setTimeout(function()&#123;</span><br><span class="line">     console.log(&apos;hello&apos;);</span><br><span class="line">   &#125;, 1000)</span><br><span class="line">&#125;, 1000)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>实例2：下面的代码执行结果是？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for(var i = 0; i&lt; 5; i++) &#123;</span><br><span class="line">   setTimeout(function() &#123;</span><br><span class="line">     console.log(i);</span><br><span class="line">   &#125;, 1000)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>执行结果： 输出5次5<br>原因：setTimeout没有实现多线程，它背后的真相是这样的：</p>
+<p>JavaScript引擎是单线程运行的,浏览器无论在什么时候都只且只有一个线程在运行JavaScript程序。<br>浏览器的内核是多线程的，它们在内核控制下相互配合以保持同步，一个浏览器至少实现三个常驻线程：JavaScript引擎线程，GUI渲染线程，浏览器事件触发线程。</p>
+<ul>
+<li>JavaScript引擎是基于事件驱动单线程执行的，JavaScript引擎一直等待着任务队列中任务的到来，然后加以处理，浏览器无论什么时候都只有一个JavaScript线程在运行JavaScript程序。</li>
+<li>GUI渲染线程负责渲染浏览器界面，当界面需要重绘（Repaint）或由于某种操作引发回流(Reflow)时,该线程就会执行。但需要注意，GUI渲染线程与JavaScript引擎是互斥的，当JavaScript引擎执行时GUI线程会被挂起，GUI更新会被保存在一个队列中等到JavaScript引擎空闲时立即被执行。</li>
+<li>事件触发线程，当一个事件被触发时该线程会把事件添加到待处理队列的队尾，等待JavaScript引擎的处理。这些事件可来自JavaScript引擎当前执行的代码块如setTimeout、也可来自浏览器内核的其他线程如鼠标点击、Ajax异步请求等，但由于JavaScript的单线程关系所有这些事件都得排队等待JavaScript引擎处理（当线程中没有执行任何同步代码的前提下才会执行异步代码）。</li>
+</ul>
+<p>所以循环执行的时候，每次循环执行的时候，由于时间没到，所以setTimeout()方法里的函数不执行，添加到事件队列中，循环结束，i等于5，事件队列中存在5个事件函数，当时间到了的时候，会依次执行这5个函数，所以输出5次5。</p>
+<ul>
+<li>实例3：如何让实例2中的代码输出每次循环时的i值？</li>
+</ul>
+<p>第一种方法：用setTimeout()方法的第3个参数将i值传递到匿名函数中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for(var i = 0; i &lt; 5; i++) &#123;</span><br><span class="line">  setTimeout(function(count) &#123;</span><br><span class="line">    console.log(count)</span><br><span class="line">  &#125;, 1000, i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第二种方法：用ES6的let关键字定义变量i</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for(let i = 0; i &lt; 5; i++) &#123;</span><br><span class="line">  setTimeout(function() &#123;</span><br><span class="line">    console.log(i)</span><br><span class="line">  &#125;, 1000)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 解析：上面的代码中，变量i是let声明的，当前的i只在本轮循环有效，所以每一次循环的i其实都是一个新的变量，所以最后输出的是每次循环结束时的i值。你可能会问，如果每一轮循环的变量i都是重新声明的，那它怎么知道上一轮循环的值，从而计算出本轮循环的值？这是因为JavaScript引擎内部会记住上一轮循环的值，初始化本轮变量i时，就在上一轮循环的基础上进行计算。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/liumengjie2148.github.io/2018/07/04/setTimeout小记/" data-id="cjj800m1n0002kws66ec75j1j" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/liumengjie2148.github.io/2018/07/04/hello-Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello Hexo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/liumengjie2148.github.io/2018/07/04/setTimeout小记/">setTimeout小记</a>
+          </li>
+        
+          <li>
+            <a href="/liumengjie2148.github.io/2018/07/04/hello-Hexo/">Hello Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/liumengjie2148.github.io/2018/05/11/hexo-github搭建个人博客/">hexo+github搭建个人博客并部署到GitHub上</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 liumengjie<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/liumengjie2148.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/liumengjie2148.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/liumengjie2148.github.io/fancybox/jquery.fancybox.css">
+  <script src="/liumengjie2148.github.io/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/liumengjie2148.github.io/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
