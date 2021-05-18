@@ -1,104 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>Echarts之formatter用法 | 博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Echarts图表之formatter用法 formatter  内容格式器，把一些不够人性化的内容通过某种处理让其变得人性化，便于用户更好地理解内容，支持字符串模板和回调函数两种形式 Echarts图表组件内的格式化常用的地方： 1、 legend.formatter 用来格式化图例文本。 示例： 123456// 使用字符串模板，模板变量为图例名称 &amp;#123;name&amp;#125;format">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Echarts之formatter用法">
-<meta property="og:url" content="http://yoursite.com/liumengjie2148.github.io/2018/08/24/Echarts之formatter用法/index.html">
-<meta property="og:site_name" content="博客">
-<meta property="og:description" content="Echarts图表之formatter用法 formatter  内容格式器，把一些不够人性化的内容通过某种处理让其变得人性化，便于用户更好地理解内容，支持字符串模板和回调函数两种形式 Echarts图表组件内的格式化常用的地方： 1、 legend.formatter 用来格式化图例文本。 示例： 123456// 使用字符串模板，模板变量为图例名称 &amp;#123;name&amp;#125;format">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-24T10:42:52.181Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Echarts之formatter用法">
-<meta name="twitter:description" content="Echarts图表之formatter用法 formatter  内容格式器，把一些不够人性化的内容通过某种处理让其变得人性化，便于用户更好地理解内容，支持字符串模板和回调函数两种形式 Echarts图表组件内的格式化常用的地方： 1、 legend.formatter 用来格式化图例文本。 示例： 123456// 使用字符串模板，模板变量为图例名称 &amp;#123;name&amp;#125;format">
-  
-    <link rel="alternate" href="/liumengjie2148.github.io/atom.xml" title="博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/liumengjie2148.github.io/css/style.css">
-</head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/liumengjie2148.github.io/" id="logo">博客</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/liumengjie2148.github.io/">Home</a>
-        
-          <a class="main-nav-link" href="/liumengjie2148.github.io/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/liumengjie2148.github.io/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com/liumengjie2148.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-Echarts之formatter用法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/liumengjie2148.github.io/2018/08/24/Echarts之formatter用法/" class="article-date">
-  <time datetime="2018-08-24T10:39:08.000Z" itemprop="datePublished">2018-08-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Echarts之formatter用法
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Echarts图表之formatter用法</p>
-<p>formatter  内容格式器，把一些不够人性化的内容通过某种处理让其变得人性化，便于用户更好地理解内容，支持字符串模板和回调函数两种形式</p>
-<p>Echarts图表组件内的格式化常用的地方：</p>
-<p>1、 legend.formatter</p>
-<p>用来格式化图例文本。</p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Echarts图表之formatter用法 | 博客</title><link rel="stylesheet" type="text/css" href="//fonts.neworld.org/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/liumengjie2148.github.io/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/liumengjie2148.github.io/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/liumengjie2148.github.io/favicon.ico"><link rel="bookmark" href="/liumengjie2148.github.io/favicon.ico"><link rel="apple-touch-icon" href="/liumengjie2148.github.io/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/liumengjie2148.github.io/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/liumengjie2148.github.io/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Echarts图表之formatter用法</h1><a id="logo" href="/liumengjie2148.github.io/.">博客</a><p class="description"></p></div><div id="nav-menu"><a href="/liumengjie2148.github.io/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/liumengjie2148.github.io/archives/"><i class="fa fa-archive"> 归档</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="Arama"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">Echarts图表之formatter用法</h1><div class="post-meta"><a href="/liumengjie2148.github.io/2018/08/24/Echarts之formatter用法/#comments" class="comment-count"></a><p><span class="date">Aug 24, 2018</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>点击</i></i></span></p></div><div class="post-content"><p>formatter  内容格式器，把一些不够人性化的内容通过某种处理让其变得人性化，便于用户更好地理解内容，支持字符串模板和回调函数两种形式</p>
+<h2 id="Echarts图表组件内的格式化常用的地方："><a href="#Echarts图表组件内的格式化常用的地方：" class="headerlink" title="Echarts图表组件内的格式化常用的地方："></a>Echarts图表组件内的格式化常用的地方：</h2><h3 id="1、-legend-formatter"><a href="#1、-legend-formatter" class="headerlink" title="1、 legend.formatter"></a>1、 legend.formatter</h3><p>用来格式化图例文本。</p>
 <p><strong>示例：</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用字符串模板，模板变量为图例名称 &#123;name&#125;</span></span><br><span class="line">formatter: <span class="string">'Legend &#123;name&#125;'</span></span><br><span class="line"><span class="comment">// 使用回调函数</span></span><br><span class="line">formatter: <span class="function"><span class="keyword">function</span> (<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Legend '</span> + name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>2、 xAxis.axisLabel.formatter /  yAxis.axisLabel.formatter</p>
-<p>刻度标签的内容格式器</p>
+<h3 id="2、-xAxis-axisLabel-formatter-yAxis-axisLabel-formatter"><a href="#2、-xAxis-axisLabel-formatter-yAxis-axisLabel-formatter" class="headerlink" title="2、 xAxis.axisLabel.formatter /  yAxis.axisLabel.formatter"></a>2、 xAxis.axisLabel.formatter /  yAxis.axisLabel.formatter</h3><p>刻度标签的内容格式器</p>
 <p>示例:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用字符串模板，模板变量为刻度默认标签 &#123;value&#125;</span></span><br><span class="line">formatter: <span class="string">'&#123;value&#125; kg'</span></span><br><span class="line"><span class="comment">// 使用函数模板，函数参数分别为刻度数值（类目），刻度的索引</span></span><br><span class="line">formatter: <span class="function"><span class="keyword">function</span> (<span class="params">value, index</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 格式化成月/日，只在第一个刻度显示年份</span></span><br><span class="line">    <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(value);</span><br><span class="line">    <span class="keyword">var</span> texts = [(date.getMonth() + <span class="number">1</span>), date.getDate()];</span><br><span class="line">    <span class="keyword">if</span> (index === <span class="number">0</span>) &#123;</span><br><span class="line">        texts.unshift(date.getYear());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> texts.join(<span class="string">'/'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>3、 tooltip.formatter</p>
-<p>提示框浮层内容格式器</p>
+<h3 id="3、-tooltip-formatter"><a href="#3、-tooltip-formatter" class="headerlink" title="3、 tooltip.formatter"></a>3、 tooltip.formatter</h3><p>提示框浮层内容格式器</p>
 <p> （1） <strong>字符串模板</strong></p>
 <p>模板变量有 {a}, {b}，{c}，{d}，{e}，分别表示系列名，数据名，数据值等。 在 trigger 为 ‘axis’ 的时候，会有多个系列的数据，此时可以通过 {a0}, {a1}, {a2} 这种后面加索引的方式表示系列的索引。 不同图表类型下的 {a}，{b}，{c}，{d} 含义不一样。 其中变量{a}, {b}, {c}, {d}在不同图表类型下代表数据含义为：</p>
 <p>折线（区域）图、柱状（条形）图、K线图 : {a}（系列名称），{b}（类目值），{c}（数值）, {d}（无）</p>
@@ -118,8 +25,7 @@
 <p>第二个参数 ticket 是异步回调标识，配合第三个参数 callback 使用。 第三个参数 callback 是异步回调，在提示框浮层内容是异步获取的时候，可以通过 callback 传入上述的 ticket 和 html 更新提示框浮层内容。</p>
 <p><strong>示例：</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">formatter: <span class="function"><span class="keyword">function</span> (<span class="params">params, ticket, callback</span>) </span>&#123;</span><br><span class="line">    $.get(<span class="string">'detail?name='</span> + params.name, <span class="function"><span class="keyword">function</span> (<span class="params">content</span>) </span>&#123;</span><br><span class="line">        callback(ticket, toHTML(content));</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Loading'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>4、 series[i]-*.label.formatter</p>
-<p>标签内容格式器，字符串模板与回调函数返回的字符串均支持用 \n 换行。</p>
+<h3 id="4、-series-i-label-formatter"><a href="#4、-series-i-label-formatter" class="headerlink" title="4、 series[i]-*.label.formatter"></a>4、 series[i]-*.label.formatter</h3><p>标签内容格式器，字符串模板与回调函数返回的字符串均支持用 \n 换行。</p>
 <p><strong>字符串模板</strong> 模板变量有：</p>
 <ul>
 <li>{a}：系列名。</li>
@@ -134,115 +40,4 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(params: <span class="built_in">Object</span>|<span class="built_in">Array</span>) =&gt; string</span><br></pre></td></tr></table></figure>
 <p>参数 params 是 formatter 需要的单个数据集。格式如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    componentType: &apos;series&apos;,</span><br><span class="line">    // 系列类型</span><br><span class="line">    seriesType: string,</span><br><span class="line">    // 系列在传入的 option.series 中的 index</span><br><span class="line">    seriesIndex: number,</span><br><span class="line">    // 系列名称</span><br><span class="line">    seriesName: string,</span><br><span class="line">    // 数据名，类目名</span><br><span class="line">    name: string,</span><br><span class="line">    // 数据在传入的 data 数组中的 index</span><br><span class="line">    dataIndex: number,</span><br><span class="line">    // 传入的原始数据项</span><br><span class="line">    data: Object,</span><br><span class="line">    // 传入的数据值</span><br><span class="line">    value: number|Array,</span><br><span class="line">    // 数据图形的颜色</span><br><span class="line">    color: string,</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/liumengjie2148.github.io/2018/08/24/Echarts之formatter用法/" data-id="cjl7v6w4i00004vs6tcv565cl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/liumengjie2148.github.io/2018/07/13/echarts使用笔记/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">echarts使用笔记</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/05/">May 2018</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/liumengjie2148.github.io/2018/08/24/Echarts之formatter用法/">Echarts之formatter用法</a>
-          </li>
-        
-          <li>
-            <a href="/liumengjie2148.github.io/2018/07/13/echarts使用笔记/">echarts使用笔记</a>
-          </li>
-        
-          <li>
-            <a href="/liumengjie2148.github.io/2018/07/09/javascript执行机制/">javascript执行机制</a>
-          </li>
-        
-          <li>
-            <a href="/liumengjie2148.github.io/2018/07/04/setTimeout小记/">setTimeout小记</a>
-          </li>
-        
-          <li>
-            <a href="/liumengjie2148.github.io/2018/07/04/hello-Hexo/">Hello Hexo</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 liumengjie<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/liumengjie2148.github.io/" class="mobile-nav-link">Home</a>
-  
-    <a href="/liumengjie2148.github.io/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/liumengjie2148.github.io/fancybox/jquery.fancybox.css">
-  <script src="/liumengjie2148.github.io/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/liumengjie2148.github.io/js/script.js"></script>
-
-
-
-  </div>
-</body>
-</html>
+</div><div class="tags"></div><div class="post-share"></div><div class="post-nav"><a href="/liumengjie2148.github.io/2018/08/27/MacOS安装npm全局包遇到权限问题/" class="pre">MacOS安装npm全局包遇到权限问题</a><a href="/liumengjie2148.github.io/2018/07/14/npm 私有仓库 install 使用方法/" class="next">npm 私有仓库 install 使用方法</a></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Echarts图表组件内的格式化常用的地方："><span class="toc-text">Echarts图表组件内的格式化常用的地方：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、-legend-formatter"><span class="toc-text">1、 legend.formatter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、-xAxis-axisLabel-formatter-yAxis-axisLabel-formatter"><span class="toc-text">2、 xAxis.axisLabel.formatter /  yAxis.axisLabel.formatter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、-tooltip-formatter"><span class="toc-text">3、 tooltip.formatter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、-series-i-label-formatter"><span class="toc-text">4、 series[i]-*.label.formatter</span></a></li></ol></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2020/12/23/给页面添加水印/">给页面添加水印</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/08/27/MacOS安装npm全局包遇到权限问题/">MacOS安装npm全局包遇到权限问题</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/08/24/Echarts之formatter用法/">Echarts图表之formatter用法</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/07/14/npm 私有仓库 install 使用方法/">npm 私有仓库 install 使用方法</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/07/13/echarts使用笔记/">echarts使用笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/07/09/javascript执行机制/">javascript执行机制</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/07/04/setTimeout小记/">setTimeout小记</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/07/04/hello-Hexo/">Hello Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/liumengjie2148.github.io/2018/05/11/hexo-github搭建个人博客/">hexo+github搭建个人博客并部署到GitHub上</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/08/">八月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/07/">七月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/liumengjie2148.github.io/archives/2018/05/">五月 2018</a></li></ul></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/liumengjie2148.github.io/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/liumengjie2148.github.io/atom.xml">订阅</a> |  <a href="/liumengjie2148.github.io/about/">关于</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/liumengjie2148.github.io/." rel="nofollow">liumengjie.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/liumengjie2148.github.io/js/search.json.js?v=2.0.1"></script><script type="text/javascript" src="/liumengjie2148.github.io/js/toctotop.js?v=2.0.1" async></script></body></html>
